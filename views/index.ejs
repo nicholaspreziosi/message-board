@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="flex">
+      <h1><%= title %></h1>
+      <div class="messages-container">
+        <% for(let message of messages){ %>
+        <div class="message-container">
+          <div class="message-info">
+            <p class="message-user"><%=message.user%></p>
+            <p class="message-date"><%=message.added%></p>
+          </div>
+          <div class="message-text-container">
+            <p class="message-text"><%=message.text%></p>
+          </div>
+        </div>
+        <%} %>
+      </div>
+      <div class="link-container">
+        <a href="/new" class="link-btn">New Message</a>
+      </div>
+    </div>
+  </body>
+</html>

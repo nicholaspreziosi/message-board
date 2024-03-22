@@ -1,0 +1,152 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: whitesmoke;
+  margin: 0px auto;
+  padding: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.flex {
+  width: 100%;
+  max-width: 1200px;
+  height: 100vh;
+  padding: 1rem 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+@media (max-width: 769px) {
+  .flex {
+    padding: 1rem;
+  }
+}
+
+.link-container {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.link-btn,
+.submit-btn {
+  text-decoration: none;
+  color: #a537fd;
+  border: 0.5px solid #a537fd;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.link-btn:hover,
+.submit-btn:hover {
+  background-color: #a537fd;
+  color: white;
+}
+
+.message-container {
+  margin: 1rem;
+}
+
+.messages-container {
+  border: 0.5px solid grey;
+  background-color: white;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  height: 600px;
+  width: 100%;
+  overflow: scroll;
+  box-sizing: border-box;
+}
+
+.message-text-container {
+  border-radius: 1rem;
+  background-color: #a537fd;
+  padding: 1rem;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.message-container > * {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.message-user {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.message-text {
+  font-size: 1.25rem;
+}
+
+.message-date {
+  font-size: 0.75rem;
+}
+
+.message-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  gap: 1rem;
+  border-radius: 1rem;
+  border: 0.5px solid grey;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.form-container {
+  margin: 1rem;
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.name-group,
+.message-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+#user,
+#message {
+  background-color: rgba(red, green, blue, alpha);
+  border-radius: 0.5rem;
+  border: 0.5px solid grey;
+  padding: 0.5rem;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#user:focus,
+#message:focus {
+  outline: #a537fd;
+  border-color: #a537fd;
+}
+
+#message {
+  resize: none;
+}

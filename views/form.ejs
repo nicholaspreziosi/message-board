@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <form class="form" method="POST" action="/new">
+        <div class="name-group">
+          <label for="user">Name</label>
+          <input id="user" type="text" name="user" />
+        </div>
+        <div class="message-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" cols="30" rows="10"></textarea>
+        </div>
+        <button class="submit-btn" type="submit">Send Message</button>
+      </form>
+      <div class="link-container">
+        <a href="/" class="link-btn">Back</a>
+      </div>
+    </div>
+  </body>
+</html>
