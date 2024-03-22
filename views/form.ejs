@@ -9,11 +9,17 @@
       <form class="form" method="POST" action="/new">
         <div class="name-group">
           <label for="user">Name</label>
-          <input id="user" type="text" name="user" />
+          <input required id="user" type="text" name="user" />
         </div>
         <div class="message-group">
           <label for="message">Message</label>
-          <textarea id="message" name="message" cols="30" rows="10"></textarea>
+          <textarea
+            required
+            id="message"
+            name="message"
+            cols="30"
+            rows="10"
+          ></textarea>
         </div>
         <button class="submit-btn" type="submit">Send Message</button>
       </form>
